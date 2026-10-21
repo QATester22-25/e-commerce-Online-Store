@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,113 +12,176 @@
   <link rel="stylesheet" href="CSS/style.css">
 
 </head>
+
 <body>
-  
-<header>
-  <div class="top_header">
-    <div class="container">
-      <a href="#" class="logo">
-        <img src="img/logo.jpg" alt="logo">
-      </a>
 
-      <form action="" class="search_box">
-        <div class="select_box">
-          <select id="category" name="category">
-            <option value="All Categories">All Categories</option>
-            <option value="Electronics & Digital">Electronics & Digital</option>
-            <option value="Phones & Tablets">Phones & Tablets</option>
-            <option value="Fashion & Clothings">Fashion & Clothings</option>
-            <option value="Television & Monitor">Television & Monitor</option>
-            <option value="Jewerly & Watches">Jewerly & Watches</option>
-            <option value="Washing Machine">Washing Machine</option>
-            <option value="Toys & Hobbies">Toys & Hobbies</option>
-          </select>
-        </div>
+  <header>
+    <div class="top_header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="img/logo.jpg" alt="logo">
+        </a>
 
-        <input type="text" name="search" id="search" placeholder="Search For Products" required>
-        <button  type="submit">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </form>
-
-      <div class="header_icons">
-        <div class="icon"><a href="#">
-          <i class="fa-regular fa-heart"></i>
-          <span class="count count_favorite">0</span>
-        </a></div>
-        <div class="icon">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <span class="count count_item_header">0</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="bottom_header">
-    <div class="container">
-      <nav class="nav">
-        <div class="category_nav">
-          <div onclick="open_Categ_List()" class="category_btn">
-            <i class="fa-solid fa-bars"></i>
-            <p>Browse Category</p>
-            <i class="fa-solid fa-chevron-down"></i>
+        <form action="" class="search_box">
+          <div class="select_box">
+            <select id="category" name="category">
+              <option value="All Categories">All Categories</option>
+              <option value="Electronics & Digital">Electronics & Digital</option>
+              <option value="Phones & Tablets">Phones & Tablets</option>
+              <option value="Fashion & Clothings">Fashion & Clothings</option>
+              <option value="Television & Monitor">Television & Monitor</option>
+              <option value="Jewerly & Watches">Jewerly & Watches</option>
+              <option value="Washing Machine">Washing Machine</option>
+              <option value="Toys & Hobbies">Toys & Hobbies</option>
+            </select>
           </div>
-          <div class="category_nav_list">
-            <a href="#">Top 10 Offers</a>
-            <a href="#">Electronics & Digital</a>
-            <a href="#">Phones & Tablets</a>
-            <a href="#">Fashion & Clothings</a>
-            <a href="#">Television & Monitor</a>
-            <a href="#">Jewerly & Watches</a>
-            <a href="#">Toys & Hobbies</a>
-            
+
+          <input type="text" name="search" id="search" placeholder="Search For Products" required>
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+
+        <div class="header_icons">
+          <div class="icon"><a href="#">
+              <i class="fa-regular fa-heart"></i>
+              <span class="count count_favorite">0</span>
+            </a></div>
+          <div class="icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="count count_item_header">0</span>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="bottom_header">
+      <div class="container">
+        <nav class="nav">
+          <div class="category_nav">
+            <div onclick="open_Categ_List()" class="category_btn">
+              <i class="fa-solid fa-bars"></i>
+              <p>Browse Category</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="category_nav_list">
+              <a href="#">Top 10 Offers</a>
+              <a href="#">Electronics & Digital</a>
+              <a href="#">Phones & Tablets</a>
+              <a href="#">Fashion & Clothings</a>
+              <a href="#">Television & Monitor</a>
+              <a href="#">Jewerly & Watches</a>
+              <a href="#">Toys & Hobbies</a>
 
-        <ul class="nav_links">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Accessories</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+            </div>
+          </div>
 
-      <div class="login_signup btns">
-        <a href="#" class="btn">Login <i class="fa-solid fa-right-to-bracket"></i></a>
-        <a href="#" class="btn">Sign Up <i class="fa-solid fa-user-plus"></i></a>
+          <ul class="nav_links">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="login_signup btns">
+          <a href="#" class="btn">Login <i class="fa-solid fa-right-to-bracket"></i></a>
+          <a href="#" class="btn">Sign Up <i class="fa-solid fa-user-plus"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="slider">
+    <div class="container">
+
+      <div class="slide-swp mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="img/banner_home1.png" alt="slide-1">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="img/banner_home2.png" alt="slide-2">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="banner_2">
+        <a href="#">
+          <img src="img/banner_home3.png" alt="banner-home">
+        </a>
       </div>
     </div>
   </div>
-</header>
 
-<div class="slider">
-  <div class="container">
+  <div class="banners_4">
+    <div class="container">
+      <div class="box">
+        <a href="#" class="link_btn"></a>
+        <img src="img/banner3_1.png" alt="banner_4">
 
-    <div class="slide-swp mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <a href="#">
-            <img src="img/banner_home1.png" alt="slide-1">
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="#">
-            <img src="img/banner_home2.png" alt="slide-2">
-          </a>
+        <div class="text">
+          <h5>Break Disc</h5>
+          <h5>Deals on this</h5>
+          <div class="sale">
+            <p>Up <br> To</p>
+            <span>70%</span>
+          </div>
+          <h6>Shop Now</h6>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
+      <div class="box">
+        <a href="#" class="link_btn"></a>
+        <img src="img/banner3_2.png" alt="banner_4">
+
+        <div class="text">
+          <h5>Break Disc</h5>
+          <h5>Deals on this</h5>
+          <div class="sale">
+            <p>Up <br> To</p>
+            <span>70%</span>
+          </div>
+          <h6>Shop Now</h6>
+        </div>
+      </div>
+      <div class="box">
+        <a href="#" class="link_btn"></a>
+        <img src="img/banner3_3.png" alt="banner_4">
+
+        <div class="text">
+          <h5>Break Disc</h5>
+          <h5>Deals on this</h5>
+          <div class="sale">
+            <p>Up <br> To</p>
+            <span>70%</span>
+          </div>
+          <h6>Shop Now</h6>
+        </div>
+      </div>
+      <div class="box">
+        <a href="#" class="link_btn"></a>
+        <img src="img/banner3_4.png" alt="banner_4">
+
+        <div class="text">
+          <h5>Break Disc</h5>
+          <h5>Deals on this</h5>
+          <div class="sale">
+            <p>Up <br> To</p>
+            <span>70%</span>
+          </div>
+          <h6>Shop Now</h6>
+        </div>
+      </div>
     </div>
-    <div class="banner_2">
-      <a href="#">
-        <img src="img/banner_home3.png" alt="banner-home">
-      </a>
-      </div>
   </div>
-</div>
 
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
   <script src="JS/main.js"></script>
 </body>
+
 </html>
