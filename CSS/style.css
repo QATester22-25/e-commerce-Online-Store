@@ -96,7 +96,6 @@ header {
   left: 0;
   right: 0;
   box-shadow: 5px 8px 8px #d1d1d13b;
-  z-index: 999;
 }
 
 header .top_header .container {
@@ -284,6 +283,7 @@ header .bottom_header .nav_links li.active a {
 /*Slide*/
 .slider{
   position: relative;
+    z-index: -1;
 }
 
 .slider .container{
