@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>e-commerce-Online Store</title>
   <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
-  <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="CSS/style.css">
+
 </head>
 <body>
   
@@ -14,7 +17,7 @@
   <div class="top_header">
     <div class="container">
       <a href="#" class="logo">
-        <img src="img/logo.png" alt="logo">
+        <img src="img/logo.jpg" alt="logo">
       </a>
 
       <form action="" class="search_box">
@@ -87,8 +90,34 @@
   </div>
 </header>
 
+<div class="slider">
+  <div class="container">
 
+    <div class="slide-swp mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="img/banner_home1.png" alt="slide-1">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="img/banner_home2.png" alt="slide-2">
+          </a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="banner_2">
+      <a href="#">
+        <img src="img/banner_home3.png" alt="banner-home">
+      </a>
+      </div>
+  </div>
+</div>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
   <script src="JS/main.js"></script>
 </body>
 </html>
