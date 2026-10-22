@@ -14,10 +14,9 @@
 var swiper = new Swiper(".slide_product", {
   slidesPerView: 5,
   spaceBetween:20,
-    pagination: {
-      el: ".swiper-pagination",
-      dynamicBullests: true,
-      clickable: true,
+  navigation: {
+    nextEl :".swiper-button-next",
+    prevEl : ".swiper-button-prev",
     },
     autoplay: { delay: 2500 },
     loop: true,
