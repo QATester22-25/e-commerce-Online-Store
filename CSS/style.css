@@ -593,7 +593,7 @@ header .bottom_header .nav_links li.active a {
   background: #f47600;
 }
 
-/* Banners_4 */
+/* Banners */
 
 .banners{
   margin: 50px;
@@ -612,5 +612,8 @@ header .bottom_header .nav_links li.active a {
    border-radius: 8px;
 }
 
+.banners .banners_boxes.banner_3_img .box{
+  width: 32%;
+}
 
  
