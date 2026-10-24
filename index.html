@@ -47,7 +47,7 @@
               <i class="fa-regular fa-heart"></i>
               <span class="count count_favorite">0</span>
             </a></div>
-          <div class="icon">
+          <div onclick="openCloseCart()" class="icon">
             <i class="fa-solid fa-cart-shopping"></i>
             <span class="count count_item_header">0</span>
           </div>
@@ -91,6 +91,58 @@
       </div>
     </div>
   </header>
+
+
+  <div class="cart">
+    <div onclick="openCloseCart()" class="top_cart">
+      <h3>Cart Items : <span class="count_item_cart">0</span></h3>
+      <span class="close_cart"><i class="fa-regular fa-circle-xmark"></i></span>
+    </div>
+
+
+    <div class="items_in_cart" id="cart_items">
+
+      <div class="item_cart"><img src="img/product/1.png" alt="cart_img">
+        <div class="content">
+          <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit</h4>
+          <p class="price_cart">$80</p>
+          <div class="quantity_control">
+            <button class="decrease_quantity">-</button>
+            <span class="quantity">3</span>
+            <button class="increase">+</button>
+          </div>
+        </div>
+           <button class="delete_item"><i class="fa-solid fa-trash-can"></i></button>
+      </div>
+
+      <div class="item_cart"><img src="img/product/1.png" alt="cart_img">
+        <div class="content">
+          <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit</h4>
+          <p class="price_cart">$80</p>
+          <div class="quantity_control">
+            <button class="decrease_quantity">-</button>
+            <span class="quantity">3</span>
+            <button class="increase">+</button>
+          </div>
+        </div>
+           <button class="delete_item"><i class="fa-solid fa-trash-can"></i></button>
+      </div>
+
+      
+    </div>
+
+    <div class="bottom_cart">
+      <div class="total">
+        <p>Subtotal</p>
+        <p class="price_cart_total">$0</p>
+      </div>
+      <div class="button_cart">
+        <a href="#" class="btn_cart btn">Checkout</a>
+        <span onclick="openCloseCart()" class="btn_cart trans_bg btn">Shop More</span>
+      </div>
+    </div>
+  </div>
+
 
   <div class="slider">
     <div class="container">
@@ -188,7 +240,7 @@
         </div>
         <div class="products swiper-wrapper" id="swiper_items_sale">
 
-         
+
         </div>
 
 
@@ -210,15 +262,15 @@
   <div class="slider_products slide">
     <div class="container">
       <div class="slide_product mySwiper">
-  
+
         <div class="top_slide">
           <h2><i class="fa-solid fa-tags"></i>Electronics</h2>
         </div>
         <div class="products swiper-wrapper" id="swiper_electronics">
-        
+
         </div>
-  
-  
+
+
         <div class="swiper-button-next btn_Swip"></div>
         <div class="swiper-button-prev btn_Swip"></div>
       </div>
@@ -228,15 +280,15 @@
   <div class="slider_products slide">
     <div class="container">
       <div class="slide_product mySwiper">
-  
+
         <div class="top_slide">
           <h2><i class="fa-solid fa-tags"></i>Appliances</h2>
         </div>
         <div class="products swiper-wrapper" id="swiper_appliances">
-  
+
         </div>
-  
-  
+
+
         <div class="swiper-button-next btn_Swip"></div>
         <div class="swiper-button-prev btn_Swip"></div>
       </div>
@@ -246,11 +298,11 @@
   <div class="banners">
     <div class="container">
       <div class="banners_boxes banner_3_img">
-     
-          <a href="#" class="box"><img src="img/banner_box1.jpg" alt="banner_box_1"></a>
-          <a href="#" class="box"><img src="img/banner_box2.jpg" alt="banner_box_1"></a>
-          <a href="#" class="box"><img src="img/banner_box3.jpg" alt="banner_box_1"></a>
-       
+
+        <a href="#" class="box"><img src="img/banner_box1.jpg" alt="banner_box_1"></a>
+        <a href="#" class="box"><img src="img/banner_box2.jpg" alt="banner_box_1"></a>
+        <a href="#" class="box"><img src="img/banner_box3.jpg" alt="banner_box_1"></a>
+
       </div>
     </div>
   </div>
@@ -258,15 +310,15 @@
   <div class="slider_products slide">
     <div class="container">
       <div class="slide_product mySwiper">
-  
+
         <div class="top_slide">
           <h2><i class="fa-solid fa-tags"></i>Mobiles</h2>
         </div>
         <div class="products swiper-wrapper" id="swiper_mobiles">
-  
+
         </div>
-  
-  
+
+
         <div class="swiper-button-next btn_Swip"></div>
         <div class="swiper-button-prev btn_Swip"></div>
       </div>

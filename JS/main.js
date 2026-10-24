@@ -5,3 +5,9 @@ function open_Categ_List() {
 }
 
 
+let cartSection = document.querySelector('.cart');
+
+function openCloseCart() {
+  cartSection.classList.toggle('active');
+}
+
