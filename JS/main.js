@@ -11,6 +11,11 @@ function openCloseCart() {
   cartSection.classList.toggle('active');
 }
 
+const open_Menu = document.querySelector(".nav_links");
+
+function openMenu() {
+  open_Menu.classList.toggle('active');
+}
 
 fetch('products.json')
   .then(response => response.json())
