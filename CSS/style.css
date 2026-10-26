@@ -208,10 +208,15 @@ header .bottom_header nav {
   height: 60px;
 }
 
+ .login_signup .btn{
+    font-size: 18px;
+  }
+
 header .bottom_header .category_nav {
   height: 100%;
   width: 220px;
   position: relative;
+  font-size: 18px;
 }
 
 header .bottom_header .category_nav .category_btn {
@@ -221,7 +226,7 @@ header .bottom_header .category_nav .category_btn {
   justify-content: space-between;
   align-items: center;
   background: var(--main_color);
-  padding: 0 15px;
+  padding: 0 10px;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -409,7 +414,7 @@ header .bottom_header .nav_links li.active a {
   border-radius: 8px;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 55px;
   padding: 12px 10px;
   position: relative;
   transition: 0.3s;
@@ -481,7 +486,7 @@ header .bottom_header .nav_links li.active a {
 .product .img_product {
   position: relative;
   height: 180px;
-  padding: 0 20px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -569,11 +574,12 @@ header .bottom_header .nav_links li.active a {
   align-items: center;
   gap: 5px;
   color: var(--white_color);
-  padding: 5px 10px;
+  padding: 5px 15px;
   cursor: pointer;
   transition: 0.3s;
   border: 1px solid var(--main_color);
   border-radius: 8px;
+  font-size: 14px;
 }
 
 .product .icons .btn_add_cart i {
@@ -797,6 +803,119 @@ header .bottom_header .nav_links li.active a {
   display: none;
 }
 
+/* End Cart */
+
+/* Start Footer */
+footer{
+  background: var(--color_heading);
+}
+
+footer .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+footer .container .big_row{
+  width: 30%;
+}
+
+footer .container .big_row .logo_footer{
+  width: 180px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+footer .container .big_row p{
+  width: 50%;
+  color: #b1b1b1;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+footer .container .big_row .icons_footer{
+  display: flex;
+  gap: 10px;
+}
+footer .container .big_row .icons_footer a{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--main_color);
+  border-radius: 8px;
+  position: relative;
+  top: 0;
+  transition: 0.3s;
+}
+footer .container .big_row .icons_footer a:hover{
+  top: -5px;
+}
+
+footer .container .big_row .icons_footer a i{
+  color: var(--white_color);
+  font-size: 20px;
+}
+
+footer .container .row{
+  width: 30%;
+}
+
+footer .container .row h4{
+  color: var(--main_color);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+footer .container .row .links{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+footer .container .row .links a{
+    color: var(--p_color);
+    font-size: 14px;
+    position: relative;
+    left: 0;
+    transition: 0.3s;
+}
+
+footer .container .row .links a:hover{
+  color: var(--main_color);
+  left: 8px;
+}
+
+footer .container .row .links a i{
+  color: var(--main_color);
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+footer .bottom_footer{
+  background: #1d1f22;
+}
+
+footer .bottom_footer .container{
+  align-items: center;
+  padding: 5px 0;
+}
+
+footer .bottom_footer p{
+  font-variant: var(--white_color);
+}
+
+footer .bottom_footer .payment_img{
+  width: 350px;
+}
+
+/*End Footer */
+
+
+
 /*start responsive */
 
 @media (max-width: 1200px) {
@@ -876,7 +995,7 @@ header .bottom_header .nav_links li.active a {
 
   header .bottom_header .category_nav {
     width: auto;
-    height: 45px;
+    height: 95%;
   }
 
   header .bottom_header .category_nav .category_btn p {
@@ -887,9 +1006,47 @@ header .bottom_header .nav_links li.active a {
   header .bottom_header nav {
     gap: 20px;
   }  
+
+  .slide_product{
+    margin-top: 30px;
+  }
+
+  .banners_4 .container .box {
+  gap: 15px;
+}
 }
 
 @media (max-width: 960px) {
+
+
+  .top_slide h2{
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+
+  .product .img_product img{
+    height: 100px;
+    width: 150px;
+    margin: 0;
+  }
+
+  .product .name_product{
+    font-size: 14px;
+  }
+
+  .product p{
+    width: 150px;
+  }
+
+
+  .price .old_price{
+    font-size: 11px;
+  }
+ 
+
+  .login_signup .btn{
+    font-size: 16px;
+  }
   .slider .banner_2 {
     display: none;
   }
@@ -898,8 +1055,13 @@ header .bottom_header .nav_links li.active a {
     width: 100%;
   }
 
+  .banners_4 .container .box {
+  gap: 15px;
+}
+
   .banners_4 .container {
     flex-wrap: wrap;
+    gap: 5px;
   }
 
   .banners_4 .container .box {
@@ -908,9 +1070,51 @@ header .bottom_header .nav_links li.active a {
     justify-content: space-around;
   }
 
+  .banners .banners_boxes {
+  flex-wrap: wrap ;
+  gap: 10px;
+}
+
+.banners .banners_boxes .box {
+  width: 100%;
+}
+
+.banners {
+  margin: 10px ;
+}
+
+
+.banners .banners_boxes img {
+  border-radius: 8px;
+  height: 200px;
+}
+
+.banners .banners_boxes.banner_3_img .box {
+  width: 100%;
+}
+
+  footer .container{
+    flex-wrap: wrap;
+  }
+
+  footer .container .big_row{
+    width: 40%;
+    margin-bottom: 20px;
+  }
+
+  footer .container .row{
+    width: 30%;
+    margin-bottom: 20px;
+  }
+
+  footer .bottom_footer .container{
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 @media (max-width: 650px) {
+
   header .bottom_header .category_nav {
     display: none;
   }
@@ -937,25 +1141,55 @@ header .bottom_header .nav_links li.active a {
     right: -100%;
   }
 
-
-  .banners_boxes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .price p{
+    font-size: 12px;
+    min-height: 40px;
   }
 
-  .banners .banners_boxes.banner_3_img .box {
-    width: 100%;
-    margin-bottom: 10px;
+ .banners {
+  margin: 10px ;
+}
+
+.banners_4 .container .box {
+  gap: 15px;
+}
+
+  .banners_4 .container {
+    flex-wrap: wrap;
+    gap: 5px;
   }
 
-  .banners .banners_boxes.banner_2_img .box {
+  .banners_4 .container .box {
     width: 100%;
-    height: 200px;
     margin-bottom: 20px;
+    justify-content: space-around;
   }
 
-  .banners .banners_boxes.banner_2_img img {
-    height: 200px;
+.banners .banners_boxes {
+  flex-wrap: wrap;
+}
+
+.banners .banners_boxes .box {
+  width: 100%;
+}
+
+.banners .banners_boxes img {
+  border-radius: 8px;
+  height: 200px;
+}
+
+.banners .banners_boxes.banner_3_img .box {
+  width: 100%;
+}
+
+  
+    footer .container .big_row{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  footer .container .row{
+    width: 50%;
+    margin-bottom: 30px;
   }
 }
