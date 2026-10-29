@@ -6,7 +6,12 @@
      dynamicBullests: true,
      clickable: true,
    },
-   autoplay: { delay: 2500 },
+   autoplay: {
+     delay: 2500,
+     pauseOnMouseEnter: true,
+     disableOnInteraction: false,
+   },
+
    loop: true,
  });
 
@@ -18,7 +23,12 @@ var swiper = new Swiper(".slide_product", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  autoplay: { delay: 2500 },
+  autoplay: {
+    delay: 2500,
+    pauseOnMouseEnter: true,
+    disableOnInteraction: false,
+  },
+
   loop: true,
   breakpoints: {
     1200: {
