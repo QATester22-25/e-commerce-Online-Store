@@ -123,17 +123,15 @@
   <form action="">
     <div class="container">
       <div class="order_summary">
-
-      
-      <div class="input_info">
         <h1>Order Summary</h1>
         <div class="items">
-          
+        
           <div class="item_cart">
             <div class="image_name">
-              <img  src="img/product/1.png" alt="product_image">
+              <img src="img/product/1.png" alt="product_image">
               <div class="content">
-                <h4>Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit</h4>
+                <h4>Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit.Lorem ipsum dolor
+                  sit.Lorem ipsum dolor sit.Lorem ipsum dolor sit</h4>
                 <p class="price_cart">$25</p>
                 <div class="quantity_control">
                   <button class="decrease_quantity">-</button>
@@ -146,7 +144,7 @@
           </div>
           <div class="item_cart">
             <div class="image_name">
-              <img  src="img/product/0.png" alt="product_image">
+              <img src="img/product/0.png" alt="product_image">
               <div class="content">
                 <h4>Lorem ipsum dolor sit.</h4>
                 <p class="price_cart">$25</p>
@@ -157,38 +155,65 @@
                 </div>
               </div>
             </div>
-
+        
             <button class="delete_item"><i class="fa-solid fa-trash-can"></i></button>
-
+        
           </div>
         </div>
-
-
+        
+        
         <div class="bottom_summary">
           <div class="shop_table">
             <p>Subtotal :</p>
             <span class="subtotal_checkout">$32.00</span>
           </div>
-
+        
           <div class="shop_table">
             <p>Shipping :</p>
             <span class="shipping_checkout">$20.00</span>
           </div>
-
+        
           <div class="shop_table">
             <p>Total :</p>
             <span class="total_checkout">$32.00</span>
           </div>
-
+        
           <div class="button_div">
             <button type="submit">Place Order</button>
           </div>
         </div>
-
-
+      
+     
 
       </div>
+
+      <div class="input_info">
+        <div class="address">
+          <h2>Delivery Adress</h2>
+          <div class="inputs">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter your email" required>
+              <label for="name">Name</label>
+              <input type="text" placeholder="Enter your name" required>
+                <label for="address">Address</label>
+                <input type="text" placeholder="Enter your address" required>
+                  <label for="phone">Phone</label>
+                  <input type="number" placeholder="Enter your phone" required>
+          </div>
+        </div>
+        <div class="coupon">
+          <h2>Coupon Code</h2>
+
+          <div class="inputs">
+            <label for="coupon">Coupon Code</label>
+            <input type="text" placeholder="Enter coupon code">
+          </div>
+          <div class="btn_coupon">
+            <button>Apply Coupon</button>
+          </div>
+        </div>
       </div>
+
     </div>
   </form>
 </section>

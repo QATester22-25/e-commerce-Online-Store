@@ -1079,16 +1079,79 @@ footer .bottom_footer .payment_img{
   color: var(--white_color);
 }
 
+.checkout .input_info{
+  width: 45%;
+}
+.checkout .input_info h2{
+  padding: 10px 20px;
+  background-color: var(--main_color);
+  color: var(--white_color);
+  text-transform: capitalize;
+}
+
+.checkout .input_info .inputs{
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+}
+
+.checkout .input_info .inputs label{
+  color: var(--color_heading);
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.checkout .input_info .inputs input{
+  margin: 8px 0 22px;
+  padding: 12px 10px;
+  outline: none;
+  border: 2px solid var(--border_color);
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.checkout .input_info .inputs input:focus{
+  border-color: var(--main_color);
+}
 
 
 
+.checkout .input_info .address,.checkout .input_info .coupon{
+  margin-bottom: 25px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border_color);
+  box-shadow: 0px 8px 10px #c0bfbf44;
+}
 
+.checkout .input_info .coupon .btn_coupon{
+  text-align: center;
+  margin-bottom: 20px;
+}
 
+.checkout .input_info .coupon .btn_coupon button{
+  width: 50%;
+  background: var(--main_color);
+  color: var(--white_color);
+  padding: 12px 0;
+  cursor: pointer;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid var(--main_color);
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s;
+}
 
+.checkout .input_info .coupon .btn_coupon button:hover{
+  background: transparent;
+  color: var(--main_color);
+}
 
-
-
-
+.checkout .input_info .coupon .btn_coupon button:active{
+  background: var(--main_color);
+  color: var(--white_color);
+}
 
 /*End Checkout */
 
