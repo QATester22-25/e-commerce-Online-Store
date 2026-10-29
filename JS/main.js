@@ -54,17 +54,25 @@ function updateCart() {
 
   let total_price = 0;
   let total_count = 0;
+  let shipping = 20;
 
   const cartItemsContainer = document.getElementById("cart_items");
+  const checkoutItems = document.getElementById("checkout_items");
 
   cartItemsContainer.innerHTML = "";
+  if (checkoutItems) {
+    checkoutItems.innerHTML = "";
+  }
+  
 
   cart.forEach((item, index) => {
 
     let total_item_price = item.price * item.quantity;
+    
 
     total_price += total_item_price;
     total_count += item.quantity;
+   
 
      cartItemsContainer.innerHTML += `
       <div class="item_cart"><img src="${item.img}" alt="cart_img">
@@ -81,6 +89,28 @@ function updateCart() {
       </div> 
   
   `;
+    if (checkoutItems) {
+      checkoutItems.innerHTML += `
+   
+    <div class="item_cart">
+            <div class="image_name">
+              <img src="${item.img}" alt="product_image">
+              <div class="content">
+                <h4>${item.name}</h4>
+                <p class="price_cart">$${total_item_price}</p>
+                <div class="quantity_control">
+                  <button class="decrease_quantity" data-index="${index}">-</button>
+                  <span class="quantity">${item.quantity}</span>
+                  <button class="increase_quantity" data-index="${index}">+</button>
+                </div>
+              </div>
+            </div>
+            <button class="delete_item" data-index="${index}"><i class="fa-solid fa-trash-can"></i></button>
+          </div>
+
+    `;
+    }
+    
   })
 
   const cart_total_price = document.querySelector('.price_cart_total');
@@ -93,8 +123,15 @@ function updateCart() {
   cart_item_count.innerHTML = total_count;
   cart_header_count.innerHTML = total_count;
 
+  if (checkoutItems) {
+    const subtotalCheckout = document.querySelector(".subtotal_checkout");
+    const totalCheckout = document.querySelector(".total_checkout");
 
-
+    let total_checkout = total_price + shipping;
+    subtotalCheckout.innerHTML = `$ ${total_price}`;
+    totalCheckout.innerHTML = `$ ${total_checkout}`
+  }
+  
 
 
 
