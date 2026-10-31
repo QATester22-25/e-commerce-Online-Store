@@ -105,12 +105,12 @@ header .top_header .container {
   align-items: center;
   justify-content: space-between;
   height: 50px;
-  margin: 20px auto;
+  margin: 30px auto;
   padding: 15px 0;
 }
 
 header .top_header .logo {
-  width: 140px;
+  width: 150px;
 }
 
 header .top_header .search_box {
@@ -119,6 +119,7 @@ header .top_header .search_box {
   align-items: center;
   border-radius: 8px;
   background: var(--bg_color);
+  margin-bottom: 40px;
 }
 
 header .top_header .search_box input {
@@ -208,6 +209,7 @@ header .bottom_header nav {
   align-items: center;
   gap: 50px;
   height: 60px;
+  padding:  0 10px;
 }
 
  .login_signup .btn{
@@ -228,7 +230,7 @@ header .bottom_header .category_nav .category_btn {
   justify-content: space-between;
   align-items: center;
   background: var(--main_color);
-  padding: 0 10px;
+  padding: 20px ;
   border-radius: 8px;
   cursor: pointer;
 }
@@ -1192,14 +1194,10 @@ footer .bottom_footer .payment_img{
     flex-wrap: wrap;
   }
 
-  header .top_header .search_box {
-    order: 3;
-    width: 80%;
-    margin: 20px auto 0;
-  }
 
   header .top_header .logo {
-    width: 140px;
+    width: 150px;
+    margin-top: -30px;
   }
 
   header .top_header .search_box select {
@@ -1376,6 +1374,25 @@ footer .bottom_footer .payment_img{
     flex-direction: column;
     gap: 10px;
   }
+
+  header .top_header .search_box {
+    order: 3;
+    width: 100%;
+    margin: 80px auto 0;
+  }
+
+    /*Checkout page responsiveness */
+  .checkout .container{
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .checkout .order_summary, .checkout .input_info{
+    width: 100%;
+    margin: 20px;
+   
+  }
 }
 
 @media (max-width: 650px) {
@@ -1457,4 +1474,14 @@ footer .bottom_footer .payment_img{
     width: 50%;
     margin-bottom: 30px;
   }
+
+   header .top_header .search_box {
+    order: 3;
+    width: 100%;
+    margin: 60px auto 0;
+    background: var(--bg_color);
+  }
+
 }
+
+
